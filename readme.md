@@ -17,6 +17,7 @@ A simple Discord utility bot designed for running 24/7 on a Raspberry Pi.
 - **DCUO Census Integration:** Track player stats, check name availability, and monitor characters by unique hash IDs to accurately log scammer name changes.
 - **Voice Hubs:** Dynamic creation and teardown of temporary voice channels for community management.
 - **Tools & Utilities:** Includes AFK tracking, QR code generation, sticky messages, custom commands, and reaction roles.
+- **Leveling System:** Simple XP engine, multipliers, rank cards, auto roles, and interactive button panels. (more comming soon)
 ---
 
 ## Project Structure
