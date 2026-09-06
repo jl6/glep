@@ -1,6 +1,7 @@
 module.exports = {
     name: 'ping',
     description: 'Replies with latency info.',
+    usage: '',
     devOnly: true,
     async execute(msg) {
         const start = await msg.reply('Pinging...');

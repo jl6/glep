@@ -7,7 +7,7 @@ const db = new Database(path.join(process.cwd(), 'database', 'data.db'));
 module.exports = {
     name: 'prefix',
     description: 'Change command prefix',
-    usage: '<prefix>',
+    usage: 'newprefix',
 
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) {
