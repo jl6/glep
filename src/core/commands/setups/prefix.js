@@ -8,7 +8,6 @@ module.exports = {
     name: 'prefix',
     description: 'Change command prefix',
     usage: '<prefix>',
-    selfClean: 9000,
 
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) {

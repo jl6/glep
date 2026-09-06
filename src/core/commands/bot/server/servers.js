@@ -4,7 +4,6 @@ module.exports = {
   name: 'servers',
   description: 'Lists all servers the bot is in.',
   usage:'',
-  selfClean: 9000,
   devOnly: true,
   
   async execute(msg, args, client, db) {

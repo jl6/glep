@@ -13,7 +13,7 @@ const db = new Database(path.join(dir, 'data.db'));
 module.exports = {
     name: 'help',
     description: 'Displays available commands or specific command info.',
-    usage: '[command]',
+    usage: '',
     async execute(msg, args, client) {
         let prefix = process.env.PREFIX || '!';
 
@@ -31,6 +31,7 @@ module.exports = {
             const embed = new EmbedBuilder()
                 .setTitle(`Command: ${cmd.name}`)
                 .setDescription(cmd.description || 'No description provided.')
+                .setThumbnail(client.user.displayAvatarURL())
                 .addFields({ name: 'Usage', value: `\`\`\`text\n${usage}\n\`\`\`` });
 
             return msg.reply({ embeds: [embed] });
@@ -38,18 +39,19 @@ module.exports = {
 
         const groups = {};
         client.commands.forEach(cmd => {
-            const cat = cmd.category ? cmd.category.toUpperCase() : 'GENERAL';
+            const cat = cmd.category || 'General';
             if (!groups[cat]) groups[cat] = [];
-            groups[cat].push(cmd);
+            groups[cat].push(cmd.name);
         });
 
         const embed = new EmbedBuilder()
             .setTitle('Command Directory')
-            .setDescription(`Prefix: \`${prefix}\``);
+            .setDescription(`Prefix: \`${prefix}\`\nUse \`${prefix}help [command]\` for details.`)
+            .setThumbnail(client.user.displayAvatarURL());
 
-        for (const [cat, cmds] of Object.entries(groups)) {
-            const list = cmds.map(c => `\`${prefix}${c.name}\` - ${c.description || 'No description'}`).join('\n');
-            embed.addFields({ name: cat, value: list });
+        for (const [cat, names] of Object.entries(groups)) {
+            const list = names.map(n => `\`${n}\``).join(', ');
+            embed.addFields({ name: cat.toUpperCase(), value: list || 'None' });
         }
 
         return msg.reply({ embeds: [embed] });

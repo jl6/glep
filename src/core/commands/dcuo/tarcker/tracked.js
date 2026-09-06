@@ -9,7 +9,6 @@ module.exports = {
     name: 'tracked',
     description: 'Lists all tracked characters',
     usage: '',
-    selfClean: 15000,
     specialOnly: true,
 
     async execute(msg) {

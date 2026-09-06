@@ -6,11 +6,7 @@ module.exports = {
     name: 'customcmd',
     description: 'Manage custom text commands for the server.',
     usage: 'add|remove|list [name] [response]',
-    category: 'setups',
-    cleanup: false,
-    userPermissions: [PermissionFlagsBits.ManageMessages],
-    botPermissions: [PermissionFlagsBits.SendMessages],
-
+  
     async execute(msg, args, client) {
         const action = args[0]?.toLowerCase();
         const dbKey = `custom_cmds_${msg.guild.id}`;

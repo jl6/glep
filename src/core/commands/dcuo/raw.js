@@ -106,7 +106,6 @@ module.exports = {
     name: 'raw',
     description: 'Raw JSON data for character',
     usage: '[name]',
-    selfClean: 15000,
 
     async execute(msg, args) {
         if (!args.length) return msg.reply('Provide a character name.');

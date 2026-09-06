@@ -3,7 +3,7 @@ const { PermissionFlagsBits } = require('discord.js');
 module.exports = {
   name: 'daroles',
   description: 'Deletes all removable custom roles on the server.',
-  usage:'confirm',
+  usage:'[confirm]',
   
   async execute(msg, args, client, db) {
     if (!msg.member.permissions.has(PermissionFlagsBits.Administrator)) {

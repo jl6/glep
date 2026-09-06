@@ -3,8 +3,7 @@ const { EmbedBuilder, PermissionFlagsBits, AttachmentBuilder, ChannelType } = re
 module.exports = {
     name: 'map',
     description: 'Generates a text layout of server channels.',
-    usage: '[SERVER ID]',
-    selfClean: 9000,
+    usage: '[server_id]',
     devOnly: true,
     
     async execute(msg, args, client, db) {

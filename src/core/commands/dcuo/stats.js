@@ -14,7 +14,6 @@ module.exports = {
     name: 'stats',
     description: 'Displays character stats',
     usage: '[name]',
-    selfClean: 15000,
 
     async execute(msg, args) {
         if (!args.length) return msg.reply('Provide a character name.');

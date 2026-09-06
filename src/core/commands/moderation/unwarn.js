@@ -4,6 +4,7 @@ const db = require('../../../../database/moderation');
 module.exports = {
     name: 'unwarn',
     description: 'Remove warnings from a user',
+    usage: '[user] [count|all] [reason]',
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ModerateMembers)) {
             return msg.reply('Missing permissions');

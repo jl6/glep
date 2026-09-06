@@ -4,7 +4,7 @@ module.exports = {
     name: 'emojilist',
     description: 'Shows all custom emoji names and IDs',
     usage: 'emojilist',
-    selfClean: false,
+
     async execute(msg, args) {
         const emojis = Array.from(msg.guild.emojis.cache.values());
         if (!emojis.length) return msg.reply('No custom emojis found.');

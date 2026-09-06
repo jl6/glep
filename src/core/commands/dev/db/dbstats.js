@@ -3,7 +3,7 @@ const { PermissionFlagsBits } = require('discord.js');
 module.exports = {
   name: 'dbstats',
   description: 'Displays a breakdown of database tables and rows.',
-  selfClean: 9000,
+  usage: '',
   devOnly: true,
   
   async execute(msg, args, client, db) {

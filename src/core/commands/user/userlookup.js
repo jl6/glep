@@ -4,8 +4,7 @@ module.exports = {
   name: 'lookup',
   description: 'Look up a user by ID using the global API',
   usage: '[ID]',
-  selfClean: false,
-  
+ 
   async execute(msg, args, client) {
     const uid = args[0];
 

@@ -74,7 +74,6 @@ module.exports = {
     name: 'character',
     description: 'Look up DCUO character details',
     usage: '[name]',
-    selfClean: 15000,
 
     async execute(msg, args) {
         if (!args.length) return msg.reply('Provide a character name.');

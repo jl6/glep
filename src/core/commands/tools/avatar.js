@@ -4,6 +4,8 @@ const { EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 module.exports = {
     name: 'avatar',
     description: 'Displays a user avatar.',
+    usage: '[@user or leave blank for your avatar]',
+    
     async execute(msg, args) {
         if (!msg.channel.permissionsFor(msg.client.user)?.has([PermissionFlagsBits.SendMessages, PermissionFlagsBits.EmbedLinks])) {
             return;

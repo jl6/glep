@@ -3,8 +3,8 @@ const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentTyp
 module.exports = {
     name: 'addemoji',
     description: 'Inspects and adds custom emojis to the server',
-    usage: 'addemoji <emoji>',
-    selfClean: 15000,
+    usage: '[emoji]',
+  
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuildExpressions)) {
             return msg.reply('Missing permissions.');

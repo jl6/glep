@@ -1,4 +1,3 @@
-// src/core/commands/setups/welcome.js
 const path = require('path');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, PermissionFlagsBits, ModalBuilder, TextInputBuilder, TextInputStyle, EmbedBuilder } = require('discord.js');
 const db = require(path.join(process.cwd(), 'database', 'welcomedb'));
@@ -6,6 +5,7 @@ const db = require(path.join(process.cwd(), 'database', 'welcomedb'));
 module.exports = {
     name: 'welcome',
     description: 'Configure welcome and leave settings',
+    usage: '',
     execute: async (msg, args, client) => {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) return msg.reply('Missing permissions: Manage Guild required.');
 

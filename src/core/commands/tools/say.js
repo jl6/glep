@@ -3,7 +3,8 @@ const { PermissionFlagsBits, EmbedBuilder } = require('discord.js');
 module.exports = {
     name: 'say',
     description: 'Repeats text or sends an embed.',
-    usage:'your messge | embed then your message',
+    usage:'[message] | [embed] [message]',
+
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageMessages)) return;
         if (!args.length) return msg.reply('Missing message content.');

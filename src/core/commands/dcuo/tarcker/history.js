@@ -21,8 +21,7 @@ function getHistory(hash) {
 module.exports = {
     name: 'history',
     description: 'Displays name history for tracked character',
-    usage: '<name_or_hash>',
-    selfClean: 15000,
+    usage: '[name_or_hash]',
     specialOnly: true,
 
     async execute(msg, args) {

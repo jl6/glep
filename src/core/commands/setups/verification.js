@@ -5,6 +5,7 @@ const db = require(path.join(process.cwd(), 'database', 'verificationdb'));
 module.exports = {
     name: 'verification',
     description: 'Configure user verification setup',
+    usage: '',
     execute: async (msg, args, client) => {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) return msg.reply('Missing permissions: Manage Guild required.');
 

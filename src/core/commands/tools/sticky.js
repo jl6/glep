@@ -17,7 +17,7 @@ db.prepare(`
 module.exports = {
     name: 'sticky',
     description: 'Sets a persistent message at the bottom of the channel',
-    usage:'[MESSGE] | remove',
+    usage:'message | remove',
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageMessages)) {
             return msg.reply('Missing permissions: Manage Messages required.');

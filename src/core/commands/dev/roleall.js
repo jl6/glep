@@ -3,6 +3,7 @@ const { PermissionFlagsBits } = require('discord.js');
 module.exports = {
     name: 'roleall',
     description: 'Assign a role to all members',
+    usage: '[role]',
     devOnly: true,
     execute: async (msg, args, client) => {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageRoles)) {

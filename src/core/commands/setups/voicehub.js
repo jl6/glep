@@ -25,8 +25,8 @@ db.exec(`
 module.exports = {
     name: 'vhub',
     description: 'Builds a dynamic voice hub with a control dashboard',
-    usage: '[off]',
-    selfClean: 9000,
+    usage: '[off]', //update later so its button based after set up when the hub is already active
+  
 
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.Administrator)) {

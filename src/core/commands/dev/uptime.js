@@ -1,7 +1,8 @@
 module.exports = {
     name: 'uptime',
     description: 'Shows bot uptime.',
-    selfClean: 9000,
+    usage: '',
+
     
     async execute(msg, args, client, db) {
         const sec = Math.floor(client.uptime / 1000);

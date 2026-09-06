@@ -3,7 +3,7 @@ const { PermissionFlagsBits } = require('discord.js');
 module.exports = {
     name: 'nickname',
     description: 'Update or reset nicknames for one or more users.',
-    usage: '@user1 @user2 ... | newnickname or reset',
+    usage: '@user1 @user2 | newnickname or reset',
     
 
     async execute(msg, args) {

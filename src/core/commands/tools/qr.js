@@ -3,6 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 module.exports = {
     name: 'qr',
     description: 'Generates a QR code for text or links.',
+    usage: '[text | link]',
     async execute(msg, args) {
         const text = args.join(' ');
         if (!text) {

@@ -79,7 +79,6 @@ module.exports = {
     name: 'track',
     description: 'Tracks character name changes',
     usage: '[name]',
-    selfClean: 15000,
     specialOnly: true,
 
     async execute(msg, args) {

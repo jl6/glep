@@ -43,7 +43,7 @@ module.exports = {
     name: 'selfbot',
     description: 'Designates a trap channel to ban self bots',
     usage: '[#channel]',
-    selfClean: 9000,
+   
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) {
             return msg.reply('Missing Manage Server permissions.');

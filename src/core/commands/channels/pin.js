@@ -3,7 +3,7 @@ const { EmbedBuilder, PermissionFlagsBits } = require('discord.js');
 module.exports = {
     name: 'pin',
     description: 'Pins a message via reply, ID, or custom text',
-    usage: 'pin [text or message id]',
+    usage: '[text | message id | reply to a message]',
     
     async execute(msg, args) {
         if (msg.reference?.messageId) {

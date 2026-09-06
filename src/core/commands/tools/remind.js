@@ -68,9 +68,7 @@ function scheduleReminder(client, rem) {
 module.exports = {
     name: 'remind',
     description: 'Set a timed reminder',
-    usage: '<time> <message>',
-    selfClean: false,
-   
+    usage: '[duration] [message]',
 
     async execute(msg, args) {
         if (!args[0] || !args[1]) {

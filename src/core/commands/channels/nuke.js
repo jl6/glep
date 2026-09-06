@@ -3,6 +3,7 @@ const { PermissionFlagsBits, EmbedBuilder } = require('discord.js');
 module.exports = {
     name: 'nuke',
     description: 'Deletes and recreates the current channel.',
+    usage: '',
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageChannels)) {
             return msg.reply('Missing permissions.');

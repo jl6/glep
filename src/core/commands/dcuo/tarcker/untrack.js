@@ -8,7 +8,6 @@ module.exports = {
     name: 'untrack',
     description: 'Removes tracked character from database',
     usage: '[name | hash | all]',
-    selfClean: 15000,
     specialOnly: true,
 
     async execute(msg, args) {

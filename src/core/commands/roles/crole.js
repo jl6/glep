@@ -3,7 +3,7 @@ const { PermissionFlagsBits } = require('discord.js');
 module.exports = {
   name: 'createrole',
   description: 'Creates a new role.',
-  usage: '[NAME]',
+  usage: '[name]',
   
   async execute(msg, args, client, db) {
     if (!msg.member.permissions.has(PermissionFlagsBits.ManageRoles)) {

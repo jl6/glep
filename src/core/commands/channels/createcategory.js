@@ -3,7 +3,7 @@ const { PermissionFlagsBits, ChannelType } = require('discord.js');
 module.exports = {
   name: 'createcategory',
   description: 'Creates a new channel category.',
-  usage: '<name>',
+  usage: '[category_name]',
   selfClean: 9000,
   
   async execute(msg, args, client, db) {

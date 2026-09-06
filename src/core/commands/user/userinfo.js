@@ -3,7 +3,7 @@ const { EmbedBuilder } = require('discord.js');
 module.exports = {
   name: 'userinfo',
   description: 'Displays detailed information about a server member.',
-  usage: '[@member | ID]',
+  usage: '[@member | leave blank for yourself',
   selfClean: false,
   
   async execute(msg, args) {

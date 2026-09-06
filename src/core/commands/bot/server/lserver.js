@@ -2,9 +2,8 @@ const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
     name: 'lserver',
-    description: 'Leaves a server by its ID.',
+    description: 'Leaves a server specified by its ID.',
     usage: '[server_id]',
-    selfClean: 9000,
     devOnly: true,
     
     async execute(msg, args, client, db) {

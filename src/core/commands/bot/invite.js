@@ -4,7 +4,6 @@ module.exports = {
     name: 'invite',
     description: 'Generates an invite link for the bot.',
     usage: '',
-    selfClean: 30000,
     async execute(msg, args, client) {
         const perms = [
             PermissionFlagsBits.SendMessages,

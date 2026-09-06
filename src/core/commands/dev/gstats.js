@@ -5,7 +5,6 @@ const { EmbedBuilder, version } = require('discord.js');
 module.exports = {
     name: 'gstats',
     description: 'Displays host system metrics and bot statistics.',
-    selfClean: 9000,
     devOnly: true,
     
     async execute(msg, args, client, db) {

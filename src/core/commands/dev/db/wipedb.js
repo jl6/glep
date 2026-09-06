@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   name: 'wipedb',
   description: 'Wipes the entire database.',
-  selfClean: 9000,
+  
   devOnly: true,
   
   async execute(msg, args, client, db) {

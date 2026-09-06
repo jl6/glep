@@ -5,7 +5,6 @@ module.exports = {
     name: 'name',
     description: 'Checks name availability',
     usage: '[name]',
-    selfClean: 15000,
 
     async execute(msg, args) {
         if (!args.length) {

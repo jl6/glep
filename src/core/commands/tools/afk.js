@@ -1,4 +1,3 @@
-// src/core/commands/tools/afk.js
 const { EmbedBuilder } = require('discord.js');
 const Database = require('better-sqlite3');
 const path = require('path');
@@ -10,7 +9,7 @@ db.exec('CREATE TABLE IF NOT EXISTS afk (userId TEXT PRIMARY KEY, reason TEXT, t
 module.exports = {
     name: 'afk',
     description: 'Set your AFK status and reason',
-    usage: '[MESSAGE]',
+    usage: '[message]',
 
     async execute(msg, args) {
         const reason = args.join(' ') || 'AFK';

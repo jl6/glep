@@ -4,6 +4,7 @@ module.exports = {
     name: 'srole',
     description: 'Create a self role station',
     usage:'Title \n\n you can also add emojis to the buttons',
+    
     async execute(msg, args) {
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageRoles)) {
             return msg.reply('Missing permissions: Manage Roles required.');

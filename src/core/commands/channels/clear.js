@@ -3,7 +3,7 @@ const { PermissionFlagsBits, Collection } = require('discord.js');
 module.exports = {
     name: 'clear',
     description: 'Bulk deletes messages',
-    usage: 'clear <amount> [filter]',
+    usage: '[amount] [optional: @user | bots | users | message_id to delete from]',
   
 
     async execute(msg, args) {

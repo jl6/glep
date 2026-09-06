@@ -94,7 +94,6 @@ module.exports = {
     name: 'trefresh',
     description: 'Refreshes tracked character data',
     usage: '[name | hash | all]',
-    selfClean: 15000,
     specialOnly: true,
 
     async execute(msg, args) {

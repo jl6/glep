@@ -4,7 +4,7 @@ module.exports = {
   name: 'ginvite',
   description: 'Generates or retrieves an invite link for a specified server.',
   usage: '[server_id | server_name]',
-  selfClean: 9000,
+
   devOnly: true,
   
   async execute(msg, args, client, db) {
